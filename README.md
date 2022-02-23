@@ -22,7 +22,7 @@ Possível comando para compilar o programa
 
 Possível comando para executar o programa após compilá-lo
 
-`./main /*local_do_arquivo*/*arquivo*.txt`
+`./main /local_do_arquivo/arquivo.txt`
 
 ## .exe
 Execute o arquivo main.exe de forma semelhante a seguinte
