@@ -27,7 +27,7 @@ Possível comando para executar o programa após compilá-lo
 ## .exe
 Execute o arquivo main.exe de forma semelhante a seguinte
 
-`./main.exe /*local_do_arquivo*/*arquivo*.txt`
+`./main.exe /local_do_arquivo/arquivo.txt`
 
 ## Como utilizar o Programa
 
