@@ -21,9 +21,10 @@ int main (int numargs, char *arg[]) {
    }
 
    int c;
+   c = fgetc(arquivoOrigem);
    while (c != EOF){
-      c = fgetc(arquivoOrigem);
       fputc(c,arquivoDestino);
+      c = fgetc(arquivoOrigem);
    }
 
    fclose (arquivoOrigem);
