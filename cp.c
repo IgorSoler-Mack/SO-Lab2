@@ -32,4 +32,4 @@ int main (int numargs, char *arg[]) {
    return EXIT_SUCCESS;
 }
 
-// Total de System Calls 10
+// Total de System Calls 12
