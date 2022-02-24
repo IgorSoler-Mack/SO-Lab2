@@ -7,7 +7,7 @@ void print_file(FILE *arquivo){
    char c;
    c = fgetc(arquivo);
    while (c != EOF){
-   		printf("%c", c);
+   		printf("%c", c); // <-- Possível System Call (Imprime uma mensagem no terminal, existem casos em que printf é implementado com a syscall write)
       	c = fgetc(arquivo);
    }
 }
@@ -15,14 +15,16 @@ void print_file(FILE *arquivo){
 int main (int numargs, char *arg[]) {
    FILE *arquivo;
    
-   arquivo = fopen (arg[1], "r");
+   arquivo = fopen (arg[1], "r"); // <-- System Call (Abre um arquivo do seu Computador)
    
    if (arquivo == NULL) {
-      printf ("\nNÃ£o encontrei o arquivo!\n");
+      printf ("\nNao encontrei o arquivo!\n"); // <-- Possível System Call (Imprime uma mensagem no terminal, existem casos em que printf é implementado com a syscall write)
       exit (EXIT_FAILURE);
    }
    
    print_file(arquivo);
-   fclose (arquivo);
+   fclose (arquivo); // <-- System Call  (Fecha o arquivo previamente aberto)
    return EXIT_SUCCESS;
 }
+
+// Total de System Calls 4
