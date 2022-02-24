@@ -5,10 +5,10 @@
 // Imprime o texto 
 void print_file(FILE *arquivo){
    char c;
-   c = fgetc(arquivo);
+   c = fgetc(arquivo); // <-- System Call (Lê um char de um arquivo)
    while (c != EOF){
    		printf("%c", c); // <-- Possível System Call (Imprime uma mensagem no terminal, existem casos em que printf é implementado com a syscall write)
-      	c = fgetc(arquivo);
+      	c = fgetc(arquivo); // <-- System Call (Lê um char de um arquivo)
    }
 }
 
@@ -27,4 +27,4 @@ int main (int numargs, char *arg[]) {
    return EXIT_SUCCESS;
 }
 
-// Total de System Calls 4
+// Total de System Calls 6
