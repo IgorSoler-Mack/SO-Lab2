@@ -50,3 +50,18 @@ Se o arquivo compilado cp estiver no mesmo diretório que teste.txt, o seguinte 
 Utilizando o parametro `char *arg[]` em sua função `main()`
 
 Desta forma, qualquer texto passado após a chamada da função em linha de código é interpretado como elemento deste vetor `arg`
+
+## 2- Quantas funções utilizaram de Syscalls?
+
+Funções utilizadas que utilizam de syscalls:
+- **fputc**: Utiliza de syscalls para adicionar caracteres em um arquivo
+- **fgetc**: Utiliza de syscalls para ler caracteres de um arquivo
+- **fopen**: Utiliza de syscalls para abrir um arquivo
+- **fclose**: Utiliza de syscalls para fechar um arquivo
+- **exit**: Utiliza de syscalls para encerrar um processo
+- **printf**: Utiliza de syscalls para imprimir multiplos caracteres no terminal
+
+Total de chamadas de funções que utizam de (ou são) syscalls por programa:
+- cp.c: 12 chamadas de funções
+- cat.c: 7 chamadas de funções
+
