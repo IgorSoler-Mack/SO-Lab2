@@ -19,7 +19,7 @@ int main (int numargs, char *arg[]) {
    
    if (arquivo == NULL) {
       printf ("\nNao encontrei o arquivo!\n"); // <-- Possível System Call (Imprime uma mensagem no terminal, existem casos em que printf é implementado com a syscall write)
-      exit (EXIT_FAILURE);
+      exit (EXIT_FAILURE); // <-- System Call  (Finaliza o Processo)
    }
    
    print_file(arquivo);
