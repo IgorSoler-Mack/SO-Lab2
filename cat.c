@@ -27,4 +27,4 @@ int main (int numargs, char *arg[]) {
    return EXIT_SUCCESS;
 }
 
-// Total de System Calls 6
+// Total de System Calls 7
