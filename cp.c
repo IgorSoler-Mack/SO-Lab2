@@ -1,4 +1,4 @@
-#include <stdio.h>
+##include <stdio.h>
 #include <stdlib.h>
 
 
@@ -27,8 +27,8 @@ int main (int numargs, char *arg[]) {
       c = fgetc(arquivoOrigem); // <-- System Call (Lê um char de um arquivo)
    }
 
-   fclose(arquivoOrigem);  <-- System Call  (Fecha o arquivo previamente aberto)
-   fclose(arquivoDestino); <-- System Call  (Fecha o arquivo previamente aberto)
+   fclose(arquivoOrigem);  //  <-- System Call  (Fecha o arquivo previamente aberto)
+   fclose(arquivoDestino); //  <-- System Call  (Fecha o arquivo previamente aberto)
    return EXIT_SUCCESS;
 }
 
