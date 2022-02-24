@@ -4,6 +4,7 @@
 
 // Imprime o texto 
 void print_file(FILE *arquivo){
+	// Imprime Char por Char do arquivo
  	int c;
    	c = fgetc(arquivo);
   	while(c != EOF){
