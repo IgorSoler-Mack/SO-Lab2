@@ -4,11 +4,11 @@
 
 // Imprime o texto 
 void print_file(FILE *arquivo){
-   const unsigned MAX_LENGTH = 256;
-   char buffer[MAX_LENGTH];
-
-   while (fgets(buffer, MAX_LENGTH, arquivo)){
-       printf("%s", buffer);
+   char c;
+   c = fgetc(arquivo);
+   while (c != EOF){
+   		printf("%c", c);
+      	c = fgetc(arquivo);
    }
 }
 
@@ -18,7 +18,7 @@ int main (int numargs, char *arg[]) {
    arquivo = fopen (arg[1], "r");
    
    if (arquivo == NULL) {
-      printf ("\nNão encontrei o arquivo!\n");
+      printf ("\nNÃ£o encontrei o arquivo!\n");
       exit (EXIT_FAILURE);
    }
    
