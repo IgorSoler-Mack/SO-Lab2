@@ -42,3 +42,11 @@ Se o arquivo compilado cat estiver no mesmo diretório que teste.txt, o seguinte
 Se o arquivo compilado cp estiver no mesmo diretório que teste.txt, o seguinte comando irá copia-lo para um novo arquivo teste_copy.txt
 
 `./cp teste.txt teste_copy.txt` ou em Windows `./cp.exe teste.txt teste_copy.txt`
+
+# Perguntas
+
+## 1- Como passar parametros pela linha de comando?
+
+Utilizando o parametro `char *arg[]` em sua função `main()`
+
+Desta forma, qualquer texto passado após a chamada da função em linha de código é interpretado como elemento deste vetor `arg`
