@@ -61,7 +61,7 @@ Funções utilizadas que utilizam de syscalls:
 - **exit**: Utiliza de syscalls para encerrar um processo
 - **printf**: Utiliza de syscalls para imprimir multiplos caracteres no terminal
 
-Total de chamadas de funções que utizam de (ou são) syscalls por programa:
+Total de chamadas de funções que utilizam de (ou são) syscalls por programa:
 - cp.c: 12 chamadas de funções
 - cat.c: 7 chamadas de funções
 
