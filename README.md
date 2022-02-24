@@ -11,36 +11,34 @@ Rafael Miranda Ferreira - 42080932
 
 
 ## Como Executar o Código
-O cógido pode ser compilado do arquivo de extenção .c ou rodado diretamente do executável
 
-## .c
 Compile e Execute o arquivo main.c em seu compilador de escolha (GCC foi o Utilizado)
 
-Possível comando para compilar o programa
+Possíveis comandos para compilar o programa
 
 `make main.c`
 
+`gcc .\main.c`
+
 Possível comando para executar o programa após compilá-lo
 
-`./main /local_do_arquivo/arquivo.txt`
-
-## .exe
-Execute o arquivo main.exe de forma semelhante a seguinte
-
-`./main.exe /local_do_arquivo/arquivo.txt`
+`./main`
 
 ## Como utilizar o Programa
 
-Este programa recebe de argumento de linha de comando um arquivo de texto que será impresso linh a linha no terminal do usuário.
+Estes programas recebem de argumentos de linha de comando. Desta forma, qualquer input do usuario é dado da sequinte forma ao executar o programa:
 
-Para obter este resultado, escreva a o comando que normalmente execura o programa `./main`.
+`./nome_executavel input`
 
-O endereço do arquivo a ser lido é escrito logo após o comando, Ex: `./main /home/usuario/Desktop/texto.txt`.
 
-Em seguida o .txt em questão será impresso em seu terminal.
+## Lendo arquivo teste.txt disponível neste repositorio com o programa cat.c
 
-## Lendo arquivo teste.txt disponível neste repositorio
+Se o arquivo compilado cat estiver no mesmo diretório que teste.txt, o seguinte comando irá imprimi-lo
 
-Se o arquivo compilado main estiver no mesmo diretório que teste.txt, o seguinte comando irá imprimi-lo
+`./cat teste.txt` ou em Windows `./cat.exe teste.txt`
 
-`./main teste.txt`
+## Copiando o conteúdo de teste.txt para um novo arquivo com o programa cp.c
+
+Se o arquivo compilado cp estiver no mesmo diretório que teste.txt, o seguinte comando irá copia-lo para um novo arquivo teste_copy.txt
+
+`./cp teste.txt teste_copy.txt` ou em Windows `./cp.exe teste.txt teste_copy.txt`
